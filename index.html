@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cake.css">
+    <link rel="stylesheet" href="./css/card.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:100,300' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title></title>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <div class="containers" id="app">
+        <div id="main" v-cloak>
+            <section v-show="leval">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch demo modal
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+                <section v-show="level1">
+                    <div class="level1">
+                        <div class="cover super-centered-container">
+                            <div class="overlay-static" data-aos="fade-up" data-aos-duration="3000">    
+                                <div class="inline-blocks center">
+                                    <h2 class="twenty-one block">2</h2>
+                                    <img class="image block" src="./img/img4.jpg"><h2 class="twenty-one block"> + 3</h2>
+                                </div>
+                            </div>
+                            <div class="center mt-3 w-full">
+                                <div class="typewriter">23歲生日快樂!</div>
+                            </div>
+                            <div class="card" data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
+                                <div class="back"></div>
+                                <div class="front">
+                                    <p class="opencard">請點我</p>
+                                    <div class="cover-shape-large">
+                                        <div class="shape-diamond"></div>
+                                        <div class="shape-block"></div>
+                                    </div>
+                                    <div class="cover-shape-small">
+                                        <div class="shape-diamond"></div>
+                                        <div class="shape-block">
+                                            <div class="cake">
+                                                <div class="velas">
+                                                    <div class="fuego" v-for="i in 5"></div>
+                                                </div>
+                                                <div class="cobertura"></div>
+                                                <div class="bizcocho"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-container">
+                                    <p>
+                                        測試文字1
+                                    </p>
+                                    <p class="bottom">
+                                        測試文字
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <audio ref="audioPlayer">
+                        <source src="./mp3/很需要.mp3" type="audio/mpeg">
+                    </audio>
+                </section>
+        </div>
+    </div>
+    <script src="./js/firework.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/fullpage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>

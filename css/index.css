@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Geologica', sans-serif;
+    font-weight: 500;
+    background: linear-gradient(to bottom, #000000 20%, #87CEEB 90%);
+  }
+#canvas {
+    position: absolute;
+    z-index: -1;
+}
+.section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: table;
+}
+.containers{
+    width: 100%;
+    min-height: 100vh;
+}
+[v-cloak] {
+    display:none ;
+}
+.level1,.leval{
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.leval{
+    background:#131313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.level1>p{
+    color: white;
+    font-family: "Madimi One", sans-serif;
+}
+.inline-blocks > .block{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .image{
+    height: 140px;
+    width: 140px;
+    border-radius: 180px;
+    border: 3px solid #fff;
+    margin-top: 22px;
+    margin-right: 40px;
+    
+  }
+  
+  .twenty-one{
+    font-size: 100px;
+    font-family: 'Josefin Sans';
+    font-weight: 100;
+    line-height: 180px;
+    color: #fff;
+    margin: 40px 0;
+  }
+  
+  .cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .super-centered-container{
+    display:flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .overlay-static{
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+  }
+
+  @keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .btn-flashing {
+    animation: flash 2s infinite;
+  }
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity 0.5s;
+  }
+  .fade-enter, .fade-leave-to  {
+    opacity: 0;
+  }
+  .typewriter {
+    color: #fff;
+    position: relative;
+    z-index: 1001;
+    overflow: hidden; 
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    animation: typing 2s steps(40, end), blink-caret .75s step-end infinite;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 35% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .w-full{
+    width: 100%;
+  }
+  .opencard{
+    margin-top: 10px !important;
+    color: #F75000;
+  }

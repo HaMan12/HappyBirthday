@@ -50,10 +50,11 @@ body {
 .inline-blocks > .block{
     display: inline-block;
     vertical-align: middle;
+    height: 100%;
   }
   .image{
-    height: 140px;
-    width: 140px;
+    height: 90px;
+    width: 90px;
     border-radius: 180px;
     border: 3px solid #fff;
     margin-top: 22px;
@@ -62,12 +63,11 @@ body {
   }
   
   .twenty-one{
-    font-size: 100px;
+    font-size: 54px;
     font-family: 'Josefin Sans';
     font-weight: 100;
-    line-height: 180px;
     color: #fff;
-    margin: 40px 0;
+    margin: 20px 10px;
   }
   
   .cover{
@@ -89,16 +89,17 @@ body {
     position: relative;
     z-index: 1000;
     width: 100%;
+    height: 150px;
   }
 
   @keyframes flash {
     0% { opacity: 1; }
-    50% { opacity: 0; }
+    50% { opacity: 0.3; }
     100% { opacity: 1; }
   }
   
   .btn-flashing {
-    animation: flash 2s infinite;
+    animation: flash 1.5s infinite;
   }
   .fade-enter-active, .fade-leave-active {
     transition: opacity 0.5s;
@@ -136,5 +137,23 @@ body {
   }
   .opencard{
     margin-top: 10px !important;
-    color: #F75000;
+
+  }
+  @media only screen and (max-width: 600px) {
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 200px !important;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 200px;
+    }
   }

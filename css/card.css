@@ -19,22 +19,14 @@
     font-family: "Pacifico", cursive;
     font-size: 1.5em;
     margin: 0 auto 0 auto;
-  }
-  
-  .card p {
-    font-size: 1.1em;
-    line-height: 1.4;
-    text-align: center;
-    margin: 0 auto 30px auto;
-    -webkit-user-select: none;
-    user-select: none;
-    line-height: 1.7em;
-  }
-  
+  } 
   .card .bottom {
-    text-align: center;
+    text-align: left;
     line-height: 1.4em;
     font-size: 0.94em;
+    text-indent: 2em;
+    padding: 10px;
+    margin-bottom: 0;
   }
   
   .card .front {

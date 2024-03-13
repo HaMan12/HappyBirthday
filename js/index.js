@@ -3,9 +3,8 @@ import { createApp } from 'https://cdnjs.cloudflare.com/ajax/libs/vue/3.1.4/vue.
 const app = createApp({
   data() {
     return {
-      leval:false,
-      level1:true,
-      level2:false,
+      level1:false,
+      level2:true,
       level3:false,
     };
   },
@@ -36,9 +35,10 @@ const app = createApp({
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: "auto",
+        loop:true,
         autoplay: {
-          delay: 2000, 
-          disableOnInteraction: false, 
+          delay: 3000, 
+          disableOnInteraction: false // 逗号移除
         },
         coverflowEffect: {
           rotate: 50,
@@ -46,15 +46,27 @@ const app = createApp({
           depth: 100,
           modifier: 1,
           slideShadows: true,
+        }
+      }); 
+      var swiper = new Swiper(".egg", {
+        effect: "flip",
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
         },
-        // pagination: {
-        //   el: ".swiper-pagination",
-        // },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       });
     },
     clickMe(){
       this.$refs.audioPlayer.play();
-    }
+    },
+    changeSection(){
+      this.level1=false;
+      this.level2=true;
+    },
   },
 });
 app.mount('#app');

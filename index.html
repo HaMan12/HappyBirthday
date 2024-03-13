@@ -27,7 +27,9 @@
                             <div class="overlay-static" data-aos="fade-up" data-aos-duration="3000">    
                                 <div class="inline-blocks center">
                                     <h2 class="twenty-one block">2</h2>
-                                    <img class="image block" src="./img/img4.jpg"><h2 class="twenty-one block"> + 3</h2>
+                                    <div class="center" @click="changeSection">
+                                        <img class="image block" src="./img/img4.jpg"><h2 class="twenty-one block"> + 3</h2>
+                                    </div>
                                 </div>
                             </div>
                             <div class="center w-full">
@@ -59,52 +61,79 @@
                                     </div>
                                 </div>
                                 <div class="text-container">
-                                    <p>
-                                        測試文字1
+                                    <p class="center Happy">
+                                        Happy Birthday!
+                                    </p>
+                                    <p class="bottom" style="float: left;">
+                                        <img src="./img/baby.jpg" width="50" class="baby">
+                                            慧慧，祝妳生日快樂，在這個特殊的日子，獻上我最真摯的祝福😆，謝謝妳一直以來認真的陪我聊天
+                                        盡管我們分隔兩地，生活中沒有太多交集，還是可以感受到妳是一個認真生活，且有想法的女生。                                     
                                     </p>
                                     <p class="bottom">
-                                        測試文字
+                                      知道妳不收禮物，著實讓我困擾一陣子，不知道怎麼表達生日祝福，有天睡醒突然有靈感，用每天下班打完傳說的瑣碎時間，
+                                      做一張卡片給妳，希望妳會開心。                                  
+                                    </p>
+                                    <p class="bottom" style="margin-top: -15px;">
+                                        寫這封信的時候，我們正在星耀三打滾哈哈，雖然輸多贏少，但我還是很珍惜可以跟妳相處的時光，
+                                        因為我們都不知道這段緣份能走到哪，不管妳未來做任何事，我都希望妳能快樂呦。
                                     </p>
                                 </div>
                             </div>
                             <div class="swiper mySwiper">
                                 <div class="swiper-wrapper">
                                   <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                                    <img src="./img/swiper-1.jpg" />
                                   </div>
                                   <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                    <img src="./img/swiper-2.jpg" />
                                   </div>
                                   <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                    <img src="./img/swiper-3.jpg" />
                                   </div>
                                   <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                                    <img src="./img/swiper-4.jpg" />
                                   </div>
                                   <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                                    <img src="./img/img1.jpg" />
                                   </div>
                                 </div>
                                 <div class="swiper-pagination"></div>
                               </div>
                         </div>
                     </div>
-                    <audio ref="audioPlayer">
-                        <source src="./mp3/很需要.mp3" type="audio/mpeg">
-                    </audio>
                 </section>
+                <!-- 彩蛋 -->
+                <section v-show="level2">
+                    <div class="level2-center">
+                        <div class="swiper-container egg">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide eggs">
+                                    <img src="./img/phone.jpg" alt="Phone 1">
+                                    <p>測試1</p>
+                                </div>
+                                <div class="swiper-slide eggs">
+                                    <img src="./img/phone1.jpg" alt="Phone 2">
+                                    <p>測試2</p>
+                                </div>
+                                <div class="swiper-slide eggs">
+                                    <img src="./img/phone2.jpg" alt="Phone 3">
+                                    <p>測試3</p>
+                                </div>
+                                <div class="swiper-slide eggs">
+                                    <img src="./img/phone3.jpg" alt="Phone 4">
+                                    <p>測試4</p>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </section>
+                
+                <audio ref="audioPlayer">
+                    <source src="./mp3/很需要.mp3" type="audio/mpeg">
+                </audio>
         </div>
     </div>
     <script src="./js/firework.js"></script>

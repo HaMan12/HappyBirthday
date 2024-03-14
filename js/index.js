@@ -3,8 +3,8 @@ import { createApp } from 'https://cdnjs.cloudflare.com/ajax/libs/vue/3.1.4/vue.
 const app = createApp({
   data() {
     return {
-      level1:false,
-      level2:true,
+      level1:true,
+      level2:false,
       level3:false,
     };
   },

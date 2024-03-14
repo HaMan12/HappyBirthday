@@ -105,34 +105,34 @@
                 <!-- 彩蛋 -->
                 <section v-show="level2">
                     <div class="level2-center">
-                        <div class="swiper-container egg">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide eggs">
-                                    <img src="./img/phone.jpg" alt="Phone 1">
-                                    <p>測試1</p>
-                                </div>
-                                <div class="swiper-slide eggs">
-                                    <img src="./img/phone1.jpg" alt="Phone 2">
-                                    <p>測試2</p>
-                                </div>
-                                <div class="swiper-slide eggs">
-                                    <img src="./img/phone2.jpg" alt="Phone 3">
-                                    <p>測試3</p>
-                                </div>
-                                <div class="swiper-slide eggs">
-                                    <img src="./img/phone3.jpg" alt="Phone 4">
-                                    <p>測試4</p>
-                                </div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Launch demo modal
+                      </button>
+                    
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">  
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-pagination"></div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
                         </div>
+                      </div>
                     </div>
                 </section>
                 
                 <audio ref="audioPlayer">
-                    <source src="./mp3/很需要.mp3" type="audio/mpeg">
+                    <source src="./mp3/Eric周興哲《終於了解自由 Freedom》Official Music Video.mp3" type="audio/mpeg">
                 </audio>
         </div>
     </div>
